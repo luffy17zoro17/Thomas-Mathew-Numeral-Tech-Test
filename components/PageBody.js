@@ -37,9 +37,9 @@ const LeftBodyText=[
 
 const PageBody = () => {
     return (
-    <div className="flex justify-center w-full">    
-     <div className="xl:w-[60%]">   
-      <div className="flex gap-5 scale-[0.9] xl:scale-[1]">
+     <div className="flex justify-center"> 
+      <div className="flex w-[95%] flex-col md:flex-row
+           md:gap-5 md:w-[80%] xl:w-[60%]">
 
         <div className="flex flex-col items-center pt-2">
            <TextProp title={`STATE OF THE UNION`} titleClassN={`bg-white mb-[-0.8rem] z-30 px-4
@@ -82,21 +82,18 @@ const PageBody = () => {
                   details={`Joe Biden Reveals His Superpower: Acting Like a Pretty
                      Normal Person`}
                   detailClassN={`text-red-800 font-bold
-                      bg-white text-xl xl:text-[2rem] xl:leading-[3rem]`} 
+                      bg-white text-lg xl:leading-[3rem]`} 
                   textDivClassN={`py-4 mb-[4rem] mt-[-5rem]
-                    bg-white z-30 absolute`}      
+                    bg-white z-30 left-0 absolute`}      
                />
            </div>
           </div> 
         </div>
         <RightBodyText/>
 
-        <div>
+      </div>
+     </div>   
 
-        </div>
-      </div>  
-     </div> 
-    </div> 
     );
 }
 

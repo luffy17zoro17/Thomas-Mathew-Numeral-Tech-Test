@@ -93,7 +93,7 @@ const Navbar = () => {
               imgWd={`1900`}
               imgalt={`Heading_logo`}
               imgClassN={`object-contain h-[8rem] w-[8rem] mt-[-4rem] 
-                md:mt-0 md:h-[11rem] md:w-[18rem]`}
+                md:mt-0 md:h-[11rem]`}
 
             />  
 
