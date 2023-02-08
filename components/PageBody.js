@@ -37,7 +37,8 @@ const LeftBodyText=[
 
 const PageBody = () => {
     return (
-     <div className="relative flex justify-center">   
+    <div className="flex justify-center w-full">    
+     <div className="relative flex justify-center w-full">   
       <div className="flex gap-5 scale-[0.9] xl:w-[84rem] xl:scale-[1]">
 
         <div className="flex flex-col items-center pt-2">
@@ -82,7 +83,7 @@ const PageBody = () => {
                      Normal Person`}
                   detailClassN={`text-red-800 font-bold
                       bg-white text-[1.5rem] xl:text-[2rem] `} 
-                  textDivClassN={`py-4 mb-[4rem] w-[30rem] xl:w-[37rem] mt-[-5rem]
+                  textDivClassN={`py-4 mb-[4rem] w-[15rem] xl:w-[37rem] mt-[-5rem]
                     bg-white z-30 absolute`}      
                />
            </div>
@@ -95,6 +96,7 @@ const PageBody = () => {
         </div>
       </div>  
      </div> 
+    </div> 
     );
 }
 
