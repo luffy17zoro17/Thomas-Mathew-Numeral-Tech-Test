@@ -38,7 +38,7 @@ const LeftBodyText=[
 const PageBody = () => {
     return (
     <div className="flex justify-center w-full">    
-     <div className="relative flex justify-center w-full">   
+     <div className="">   
       <div className="flex gap-5 scale-[0.9] xl:w-[84rem] xl:scale-[1]">
 
         <div className="flex flex-col items-center pt-2">
@@ -82,7 +82,7 @@ const PageBody = () => {
                   details={`Joe Biden Reveals His Superpower: Acting Like a Pretty
                      Normal Person`}
                   detailClassN={`text-red-800 font-bold
-                      bg-white text-[1.5rem] xl:text-[2rem] `} 
+                      bg-white text-xl xl:text-[2rem] `} 
                   textDivClassN={`py-4 mb-[4rem] w-[15rem] xl:w-[37rem] mt-[-5rem]
                     bg-white z-30 absolute`}      
                />

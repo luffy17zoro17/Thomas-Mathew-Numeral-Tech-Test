@@ -17,7 +17,7 @@ export default function Home() {
       <header>
          <Navbar/>
       </header>
-      <main>
+      <main className=''>
          <PageBody/>
       </main>
     </>
