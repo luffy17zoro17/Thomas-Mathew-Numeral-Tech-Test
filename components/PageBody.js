@@ -38,8 +38,8 @@ const LeftBodyText=[
 const PageBody = () => {
     return (
     <div className="flex justify-center w-full">    
-     <div className="">   
-      <div className="flex gap-5 scale-[0.9] xl:w-[84rem] xl:scale-[1]">
+     <div className="xl:w-[60%]">   
+      <div className="flex gap-5 scale-[0.9] xl:scale-[1]">
 
         <div className="flex flex-col items-center pt-2">
            <TextProp title={`STATE OF THE UNION`} titleClassN={`bg-white mb-[-0.8rem] z-30 px-4
@@ -48,7 +48,7 @@ const PageBody = () => {
           <div className="flex border-t-4 py-6 border-blue-500 z-[-10] gap-5
             flex-col md:flex-row">
 
-           <div className="sm:w-[20rem] md:w-[24rem] lg:w-[20rem] xl:w-[37rem]">
+           <div className="">
               <ImageProp
                 imgSrc={`https://compote.slate.com/images/0d5c56d8-fff3-4219-a906-a1738f5e2b53.jpeg?crop=4520%2C3013%2Cx1480%2Cy987&s=image-390`}
                 imgHt={`900`}
@@ -74,7 +74,7 @@ const PageBody = () => {
                 imgHt={`1500`}
                 imgWd={`1900`}
                 imgAlt={`body_large_img`}
-                imgClassN={`object-cover h-[27rem] w-[60rem] xl:h-[35rem] xl:w-[100rem]`}
+                imgClassN={`object-cover h-[27rem] xl:h-[35rem] xl:w-[100vw]`}
               />
               <TextProp 
                   title={`BEN MATHIS-LILLEY`}
@@ -82,8 +82,8 @@ const PageBody = () => {
                   details={`Joe Biden Reveals His Superpower: Acting Like a Pretty
                      Normal Person`}
                   detailClassN={`text-red-800 font-bold
-                      bg-white text-xl xl:text-[2rem] `} 
-                  textDivClassN={`py-4 mb-[4rem] w-[15rem] xl:w-[37rem] mt-[-5rem]
+                      bg-white text-xl xl:text-[2rem] xl:leading-[3rem]`} 
+                  textDivClassN={`py-4 mb-[4rem]  xl:w-[37rem] mt-[-5rem]
                     bg-white z-30 absolute`}      
                />
            </div>
