@@ -39,6 +39,7 @@ const PageBody = () => {
     return (
      <div className="flex justify-center"> 
       <div className="flex w-[95%] flex-col md:flex-row
+          md:pt-[5rem]
            md:gap-5 md:w-[80%] xl:w-[60%]">
 
         <div className="flex flex-col items-center pt-2">
@@ -82,9 +83,11 @@ const PageBody = () => {
                   details={`Joe Biden Reveals His Superpower: Acting Like a Pretty
                      Normal Person`}
                   detailClassN={`text-red-800 font-bold
-                      bg-white text-lg xl:leading-[3rem]`} 
-                  textDivClassN={`py-4 mb-[4rem] mt-[-5rem]
-                    bg-white z-30 left-0 absolute`}      
+                      bg-white text-xl md:text-xl xl:text-4xl
+                      xl:leading-[3rem]`} 
+                  textDivClassN={`py-4 mb-[4rem] mt-[-6rem]
+                    bg-white z-30 left-0 absolute w-[72vw]
+                    md:w-[33vw] xl:w-[22vw]`}      
                />
            </div>
           </div> 

@@ -9,6 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from "react";
 import MenuButton from "./MenuButton";
+import InputProp from "./props/InputProp";
 
 
 const NavSections = [
@@ -87,22 +88,27 @@ const Navbar = () => {
          
 
          <div className="flex items-center pt-[1.5rem]">
+           <div className="flex justify-center w-full top-[1.3rem] absolute left-0 z-[-10]
+               md:static"> 
             <ImageProp
               imgSrc={`https://images.squarespace-cdn.com/content/v1/5454d4c3e4b0bd7384bd2dbd/1574760807056-FBDRMJ0JHQNHQDJ49OVR/Slate.jpg`}
               imgHt={`1900`}
               imgWd={`1900`}
               imgalt={`Heading_logo`}
               imgClassN={`object-contain h-[8rem] w-[8rem] mt-[-4rem] 
-                md:mt-0 md:h-[11rem]`}
+                md:mt-0 md:h-[11rem] xl:h-[11rem] xl:w-[11rem]`}
 
             />  
+           </div> 
 
-            <div className={`flex gap-[1vw] text-xl hidden xl:flex`}>
+            <div className={`flex gap-[2vw] text-xl pt-[5rem]`}>
             {NavSections.map((item)=>(
-                <div key={item.id}>
+                <div key={item.id} className="cursor-pointer
+                     decoration-red-500">
                    <TextProp title={item.title}
-                      titleClassN={`text-white ${item.id===1 ? `hidden xl:flex` : 
-                       item.id===2 ? `hidden xl:flex` : ``}`}/>
+                      titleClassN={`text-white ${item.id===1 ? `hidden md:flex` : 
+                       item.id===2 ? `hidden md:flex` :
+                       item.id===3 ? `hidden md:flex` : `hidden xl:flex`}`}/>
                 </div>   
             ))}
             </div>
@@ -130,13 +136,13 @@ const Navbar = () => {
                      icon={<SearchIcon/>}
                      iconDivClassN={`text-gray-500`}
                   />
-                  <TextProp title={`Search`}
-                     titleClassN={`text-white`}/>
+                  <InputProp inputPlaceholder={`Search`}
+                     inputClassN={`bg-black text-white outline-none xl:w-[9rem]`}/>
                </div>
             </div>
 
             <div className="flex items-center gap-[1vw] text-sm
-               text-gray-400 pb-6 hidden md:flex">
+               text-gray-400 pb-6 hidden md:flex md:mb-[-0.5rem]">
                <TextProp title={`FOLLOW US`}/>
                {SocialMediaIcons.map((item)=>(
                   <div key={item.id}>
