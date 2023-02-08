@@ -40,7 +40,7 @@ const RightBodyTextList = [
 
 const RightBodyText=()=>{
     return (
-      <div className="w-[22rem] hidden md:block lg:w-[26rem]">
+      <div className="hidden md:block">
         {RightBodyTextList.map((item)=>(
             <div key={item.id} className={`text-sm pb-3 ${item.id===1 || item.id===2 || item.id===4 ?
              `border-b border-dashed` : `border-0 border-dashed`}`}>

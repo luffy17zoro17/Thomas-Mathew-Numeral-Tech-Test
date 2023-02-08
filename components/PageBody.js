@@ -74,7 +74,7 @@ const PageBody = () => {
                 imgHt={`1500`}
                 imgWd={`1900`}
                 imgAlt={`body_large_img`}
-                imgClassN={`object-cover h-[27rem] xl:h-[35rem] xl:w-[100vw]`}
+                imgClassN={`object-cover h-[27rem] xl:h-[35rem]`}
               />
               <TextProp 
                   title={`BEN MATHIS-LILLEY`}
@@ -83,7 +83,7 @@ const PageBody = () => {
                      Normal Person`}
                   detailClassN={`text-red-800 font-bold
                       bg-white text-xl xl:text-[2rem] xl:leading-[3rem]`} 
-                  textDivClassN={`py-4 mb-[4rem]  xl:w-[37rem] mt-[-5rem]
+                  textDivClassN={`py-4 mb-[4rem] mt-[-5rem]
                     bg-white z-30 absolute`}      
                />
            </div>
