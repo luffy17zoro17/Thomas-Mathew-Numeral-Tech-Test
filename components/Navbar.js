@@ -104,7 +104,7 @@ const Navbar = () => {
             <div className={`flex pt-[0.5rem] md:pl-7`}>
             {NavSections.map((item)=>(
                 <div key={item.id} className="cursor-pointer
-                    flex justify-center hover:underline hover:decoration-red-500
+                    flex justify-center hover:underline-offset-[0.3rem] hover:underline hover:decoration-red-500
                       decoration-[0.1rem] xl:text-lg">
                    <TextProp title={item.title}
                       titleClassN={`text-white ${item.id===1 ? `hidden w-[8rem] flex justify-center md:flex` : 
