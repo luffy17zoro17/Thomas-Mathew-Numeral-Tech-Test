@@ -39,7 +39,7 @@ const PageBody = () => {
     return (
      <div className="flex justify-center"> 
       <div className="flex w-[95%] flex-col md:flex-row
-          md:pt-[5rem]
+          pt-[3rem] md:pt-[5rem]
            md:gap-5 md:w-[80%] xl:w-[60%]">
 
         <div className="flex flex-col items-center pt-2">
