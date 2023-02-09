@@ -101,7 +101,7 @@ const Navbar = () => {
             />  
            </div> 
 
-            <div className={`flex pt-[0.5rem]`}>
+            <div className={`flex pt-[0.5rem] pl-7`}>
             {NavSections.map((item)=>(
                 <div key={item.id} className="cursor-pointer
                     flex justify-center hover:underline hover:decoration-red-500
