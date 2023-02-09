@@ -74,6 +74,7 @@ const Navbar = () => {
        </div>
 
        {menuOpen === true && (
+         
            <MenuButton
               menuOpen={menuOpen}
               setMenuOpen={setMenuOpen}

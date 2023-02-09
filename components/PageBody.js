@@ -1,3 +1,4 @@
+import MenuButton from "./MenuButton";
 import ImageProp from "./props/ImageProp";
 import TextProp from "./props/TextProp";
 import RightBodyText from "./RightBodyText";
@@ -37,7 +38,7 @@ const LeftBodyText=[
 
 const PageBody = () => {
     return (
-     <div className="flex justify-center"> 
+     <div className={"flex justify-center"}> 
       <div className="flex w-[95%] flex-col md:flex-row
           pt-[3rem] md:pt-[5rem]
            md:gap-5 md:w-[80%] xl:w-[60%]">

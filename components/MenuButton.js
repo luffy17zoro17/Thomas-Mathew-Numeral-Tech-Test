@@ -60,12 +60,13 @@ const MenuButton = ({menuOpen,setMenuOpen}) => {
 
     
     return (
-     <div>  
+     <div className="">  
       <IconProp onClicked={()=>setMenuOpen(false)} icon={<CloseIcon/>}
         iconDivClassN={`fixed top-2 right-5 z-40 cursor-pointer
           text-gray-300 hover:text-white`}/>  
 
       <div className={menuOpen===true ? `bottom-0 w-screen 
+       h-screen
        top-0 bg-black p-4 space-y-4 text-white z-30 fixed md:hidden` : `
          h-0 top-0 w-screen bg-black p-4 space-y-4 top-0 text-white z-30 hidden md:hidden`}>
         {MenuContents.map((item) => (
