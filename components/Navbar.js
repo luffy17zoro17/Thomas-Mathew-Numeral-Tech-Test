@@ -96,19 +96,20 @@ const Navbar = () => {
               imgWd={`1900`}
               imgalt={`Heading_logo`}
               imgClassN={`object-contain h-[8rem] w-[8rem] mt-[-4rem] 
-                md:mt-0 md:h-[11rem] xl:h-[11rem] xl:w-[11rem]`}
+                md:mt-0 md:h-[11rem] xl:h-[11rem] xl:w-[11vw]`}
 
             />  
            </div> 
 
-            <div className={`flex gap-[2vw] text-xl pt-[5rem]`}>
+            <div className={`flex pt-[0.5rem]`}>
             {NavSections.map((item)=>(
                 <div key={item.id} className="cursor-pointer
-                     decoration-red-500">
+                    flex justify-center hover:underline hover:decoration-red-500
+                      decoration-[0.1rem] xl:text-lg">
                    <TextProp title={item.title}
-                      titleClassN={`text-white ${item.id===1 ? `hidden md:flex` : 
-                       item.id===2 ? `hidden md:flex` :
-                       item.id===3 ? `hidden md:flex` : `hidden xl:flex`}`}/>
+                      titleClassN={`text-white ${item.id===1 ? `hidden w-[8rem] flex justify-center md:flex` : 
+                       item.id===2 ? `hidden w-[8rem] flex justify-center md:flex` :
+                       item.id===3 ? `hidden w-[8rem] flex justify-center md:flex` : `hidden flex justify-center w-[8rem] xl:flex`}`}/>
                 </div>   
             ))}
             </div>

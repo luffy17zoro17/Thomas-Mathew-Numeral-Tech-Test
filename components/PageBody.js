@@ -83,7 +83,7 @@ const PageBody = () => {
                   details={`Joe Biden Reveals His Superpower: Acting Like a Pretty
                      Normal Person`}
                   detailClassN={`text-red-800 font-bold
-                      bg-white text-xl md:text-xl xl:text-4xl
+                      bg-white pr-3 text-xl md:text-xl xl:text-4xl
                       xl:leading-[3rem]`} 
                   textDivClassN={`py-4 mb-[4rem] mt-[-6rem]
                     bg-white z-30 left-0 absolute w-[72vw]
