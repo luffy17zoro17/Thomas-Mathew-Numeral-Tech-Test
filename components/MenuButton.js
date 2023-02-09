@@ -5,7 +5,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 import SearchIcon from '@mui/icons-material/Search';
-import { useState } from "react";
+
 
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -78,11 +78,11 @@ const MenuButton = ({menuOpen,setMenuOpen}) => {
              <IconProp icon={<SearchIcon/>}/>
              <TextProp title={`Search`}/>
         </div>
-        <div className="flex items-center gap-3 cursor-pointer hover:text-gray-500">
+        <div className="flex items-center gap-3 ">
             <TextProp title={`FOLLOW US`}/>
             {socialMediaIcons.map((item)=>(
                 <div key={item.id}>
-                   <IconProp icon={item.icon}/> 
+                   <IconProp icon={item.icon} iconDivClassN={`cursor-pointer hover:text-gray-500`}/> 
                 </div>    
             ))}
         </div>

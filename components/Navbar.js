@@ -80,7 +80,7 @@ const Navbar = () => {
            />
        )}
 
-         <TextProp title={`Subscribe`} titleClassN={`underline decoration-red-500 top-2 absolute right-3
+         <TextProp title={`Subscribe`} titleClassN={`cursor-pointer underline decoration-red-500 top-2 absolute right-3
             text-white decoration-[0.15rem] underline-offset-[0.2rem] md:hidden`}/>
 
     <div className="flex justify-center items-center"> 
@@ -122,13 +122,13 @@ const Navbar = () => {
                <TextProp 
                   title={`Subscribe for Just $15`}
                   titleClassN={`underline font-bold
-                  decoration-red-500
+                  decoration-red-500 cursor-pointer
                      decoration-2 underline-offset-[0.2rem]`}
                />
                •
                <TextProp
                   title={`Sign In`}
-                  titleClassN={`bg-pink-200`}
+                  titleClassN={`bg-pink-200 cursor-pointer`}
                />
                </div>
 
@@ -147,7 +147,7 @@ const Navbar = () => {
                <TextProp title={`FOLLOW US`}/>
                {SocialMediaIcons.map((item)=>(
                   <div key={item.id}>
-                     <IconProp icon={item.icon} iconDivClassN={`scale-[0.9]`}/>
+                     <IconProp icon={item.icon} iconDivClassN={`scale-[0.9] cursor-pointer`}/>
                   </div>   
                ))}
             </div>
